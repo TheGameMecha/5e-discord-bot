@@ -5,7 +5,9 @@
 - Requires [Discordia](https://github.com/SinisterRectus/Discordia)
 - Clone the Repository
 
-## Starting the Bot
+## Setup the Bot
+- Create a plain text file called token.tkn
+- Put your token from the Discord App in there, and save
 - Open cmd.exe
 - Run luvit 5e-bot.lua
 
