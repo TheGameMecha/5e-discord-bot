@@ -3,7 +3,11 @@
 
 ## Installation
 - Requires [Discordia](https://github.com/SinisterRectus/Discordia)
-- Clone the Repository and run **run_dnd.bat** to start the bot on the luvit runtime environment
+- Clone the Repository
+
+## Starting the Bot
+- Open cmd.exe
+- Run luvit 5e-bot.lua
 
 ## Commands
 - !xp *show the 5e XP Table*
