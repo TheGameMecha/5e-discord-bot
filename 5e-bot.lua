@@ -4,7 +4,7 @@ local client = discordia.Client()
 
 --Bot Variables
 local bot_version = "VERSION 0.1"
-local token = 'NTAzMDM5NTY5MDkyOTM1Njgx.Dqwu2g.z8saxIhnmhIhpxCEt9lb9g2aLXI'
+local token = ''
 local botCreator = "TheGameMechanic#9693"
 local botName = "5e Bot"
 
@@ -19,6 +19,8 @@ function readAll(file)
     f:close()
     return content
 end
+
+token = readAll('token.tkn')
 
 --Creates a callback for when the bot has finished loading
 client:on('ready', function()
