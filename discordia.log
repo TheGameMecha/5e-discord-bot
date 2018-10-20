@@ -1,0 +1,114 @@
+2018-10-20 11:23:17 | [INFO]    | Discordia 2.6.0
+2018-10-20 11:23:17 | [INFO]    | Connecting to Discord...
+2018-10-20 11:23:17 | [INFO]    | Authenticated as Test Bot#2375
+2018-10-20 11:23:17 | [INFO]    | Launching shard 0 (1 out of 1)...
+2018-10-20 11:23:17 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2018-10-20 11:23:17 | [INFO]    | Shard 0 : Received HELLO (gateway-prd-main-vw40)
+2018-10-20 11:23:17 | [INFO]    | Shard 0 : Received READY (gateway-prd-main-vw40, discord-sessions-prd-1-14)
+2018-10-20 11:24:20 | [INFO]    | Discordia 2.6.0
+2018-10-20 11:24:20 | [INFO]    | Connecting to Discord...
+2018-10-20 11:24:20 | [INFO]    | Authenticated as Test Bot#2375
+2018-10-20 11:24:20 | [INFO]    | Launching shard 0 (1 out of 1)...
+2018-10-20 11:24:21 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2018-10-20 11:24:21 | [INFO]    | Shard 0 : Received HELLO (gateway-prd-main-r2bc)
+2018-10-20 11:24:21 | [INFO]    | Shard 0 : Received READY (gateway-prd-main-r2bc, discord-sessions-prd-1-9)
+2018-10-20 11:25:45 | [INFO]    | Discordia 2.6.0
+2018-10-20 11:25:45 | [INFO]    | Connecting to Discord...
+2018-10-20 11:25:45 | [INFO]    | Authenticated as Test Bot#2375
+2018-10-20 11:25:45 | [INFO]    | Launching shard 0 (1 out of 1)...
+2018-10-20 11:25:45 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2018-10-20 11:25:45 | [INFO]    | Shard 0 : Received HELLO (gateway-prd-main-33qs)
+2018-10-20 11:25:45 | [INFO]    | Shard 0 : Received READY (gateway-prd-main-33qs, discord-sessions-prd-1-16)
+2018-10-20 11:26:00 | [INFO]    | Discordia 2.6.0
+2018-10-20 11:26:00 | [INFO]    | Connecting to Discord...
+2018-10-20 11:26:00 | [INFO]    | Authenticated as Test Bot#2375
+2018-10-20 11:26:00 | [INFO]    | Launching shard 0 (1 out of 1)...
+2018-10-20 11:26:00 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2018-10-20 11:26:00 | [INFO]    | Shard 0 : Received HELLO (gateway-prd-main-9qlr)
+2018-10-20 11:26:01 | [INFO]    | Shard 0 : Received READY (gateway-prd-main-9qlr, discord-sessions-prd-1-4)
+2018-10-20 11:38:43 | [INFO]    | Discordia 2.6.0
+2018-10-20 11:38:43 | [INFO]    | Connecting to Discord...
+2018-10-20 11:38:43 | [INFO]    | Authenticated as Test Bot#2375
+2018-10-20 11:38:43 | [INFO]    | Launching shard 0 (1 out of 1)...
+2018-10-20 11:38:43 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2018-10-20 11:38:43 | [INFO]    | Shard 0 : Received HELLO (gateway-prd-main-5j2f)
+2018-10-20 11:38:45 | [INFO]    | Shard 0 : Received READY (gateway-prd-main-5j2f, discord-sessions-prd-1-13)
+2018-10-20 11:39:01 | [INFO]    | Discordia 2.6.0
+2018-10-20 11:39:01 | [INFO]    | Connecting to Discord...
+2018-10-20 11:39:01 | [INFO]    | Authenticated as 5e-Bot#2375
+2018-10-20 11:39:01 | [INFO]    | Launching shard 0 (1 out of 1)...
+2018-10-20 11:39:01 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2018-10-20 11:39:01 | [INFO]    | Shard 0 : Received HELLO (gateway-prd-main-g9mp)
+2018-10-20 11:39:01 | [INFO]    | Shard 0 : Received READY (gateway-prd-main-g9mp, discord-sessions-prd-1-18)
+2018-10-20 11:40:00 | [INFO]    | Discordia 2.6.0
+2018-10-20 11:40:00 | [INFO]    | Connecting to Discord...
+2018-10-20 11:40:00 | [INFO]    | Authenticated as 5e-Bot#2375
+2018-10-20 11:40:00 | [INFO]    | Launching shard 0 (1 out of 1)...
+2018-10-20 11:40:00 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2018-10-20 11:40:00 | [INFO]    | Shard 0 : Received HELLO (gateway-prd-main-65f5)
+2018-10-20 11:40:00 | [INFO]    | Shard 0 : Received READY (gateway-prd-main-65f5, discord-sessions-prd-1-27)
+2018-10-20 11:41:21 | [INFO]    | Discordia 2.6.0
+2018-10-20 11:41:21 | [INFO]    | Connecting to Discord...
+2018-10-20 11:41:21 | [INFO]    | Authenticated as 5e-Bot#2375
+2018-10-20 11:41:21 | [INFO]    | Launching shard 0 (1 out of 1)...
+2018-10-20 11:41:21 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2018-10-20 11:41:21 | [INFO]    | Shard 0 : Received HELLO (gateway-prd-main-bwx0)
+2018-10-20 11:41:21 | [INFO]    | Shard 0 : Received READY (gateway-prd-main-bwx0, discord-sessions-prd-1-16)
+2018-10-20 11:46:09 | [INFO]    | Discordia 2.6.0
+2018-10-20 11:46:09 | [INFO]    | Connecting to Discord...
+2018-10-20 11:46:10 | [INFO]    | Authenticated as 5e-Bot#2375
+2018-10-20 11:46:10 | [INFO]    | Launching shard 0 (1 out of 1)...
+2018-10-20 11:46:10 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2018-10-20 11:46:10 | [INFO]    | Shard 0 : Received HELLO (gateway-prd-main-r2bc)
+2018-10-20 11:46:11 | [INFO]    | Shard 0 : Received READY (gateway-prd-main-r2bc, discord-sessions-prd-1-27)
+2018-10-20 11:52:03 | [INFO]    | Discordia 2.6.0
+2018-10-20 11:52:03 | [INFO]    | Connecting to Discord...
+2018-10-20 11:52:04 | [INFO]    | Authenticated as 5e-Bot#2375
+2018-10-20 11:52:04 | [INFO]    | Launching shard 0 (1 out of 1)...
+2018-10-20 11:52:04 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2018-10-20 11:52:04 | [INFO]    | Shard 0 : Received HELLO (gateway-prd-main-04vj)
+2018-10-20 11:52:05 | [INFO]    | Shard 0 : Received READY (gateway-prd-main-04vj, discord-sessions-prd-1-20)
+2018-10-20 12:38:09 | [INFO]    | Discordia 2.6.0
+2018-10-20 12:38:09 | [INFO]    | Connecting to Discord...
+2018-10-20 12:38:10 | [INFO]    | Authenticated as 5e Bot#2375
+2018-10-20 12:38:10 | [INFO]    | Launching shard 0 (1 out of 1)...
+2018-10-20 12:38:10 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2018-10-20 12:38:10 | [INFO]    | Shard 0 : Received HELLO (gateway-prd-main-8nw1)
+2018-10-20 12:38:10 | [INFO]    | Shard 0 : Received READY (gateway-prd-main-8nw1, discord-sessions-prd-1-27)
+2018-10-20 12:38:10 | [ERROR]   | 400 - BAD REQUEST : PATCH https://discordapp.com/api/v7/users/@me
+2018-10-20 12:38:46 | [WARNING] | Uncached Guild (490332335787606031) on GUILD_MEMBER_REMOVE
+2018-10-20 12:47:06 | [INFO]    | Discordia 2.6.0
+2018-10-20 12:47:06 | [INFO]    | Connecting to Discord...
+2018-10-20 12:47:07 | [INFO]    | Authenticated as 5e Bot#2375
+2018-10-20 12:47:07 | [INFO]    | Launching shard 0 (1 out of 1)...
+2018-10-20 12:47:07 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2018-10-20 12:47:07 | [INFO]    | Shard 0 : Received HELLO (gateway-prd-main-kb9j)
+2018-10-20 12:47:07 | [INFO]    | Shard 0 : Received READY (gateway-prd-main-kb9j, discord-sessions-prd-1-7)
+2018-10-20 12:50:29 | [INFO]    | Discordia 2.6.0
+2018-10-20 12:50:29 | [INFO]    | Connecting to Discord...
+2018-10-20 12:50:29 | [INFO]    | Authenticated as 5e Bot#2375
+2018-10-20 12:50:29 | [INFO]    | Launching shard 0 (1 out of 1)...
+2018-10-20 12:50:30 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2018-10-20 12:50:30 | [INFO]    | Shard 0 : Received HELLO (gateway-prd-main-2l94)
+2018-10-20 12:50:31 | [INFO]    | Shard 0 : Received READY (gateway-prd-main-2l94, discord-sessions-prd-1-3)
+2018-10-20 12:50:55 | [INFO]    | Discordia 2.6.0
+2018-10-20 12:50:55 | [INFO]    | Connecting to Discord...
+2018-10-20 12:50:55 | [INFO]    | Authenticated as 5e Bot#2375
+2018-10-20 12:50:55 | [INFO]    | Launching shard 0 (1 out of 1)...
+2018-10-20 12:50:55 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2018-10-20 12:50:55 | [INFO]    | Shard 0 : Received HELLO (gateway-prd-main-ssj6)
+2018-10-20 12:50:55 | [INFO]    | Shard 0 : Received READY (gateway-prd-main-ssj6, discord-sessions-prd-1-28)
+2018-10-20 12:52:21 | [INFO]    | Discordia 2.6.0
+2018-10-20 12:52:21 | [INFO]    | Connecting to Discord...
+2018-10-20 12:52:22 | [INFO]    | Authenticated as 5e Bot#2375
+2018-10-20 12:52:22 | [INFO]    | Launching shard 0 (1 out of 1)...
+2018-10-20 12:52:22 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2018-10-20 12:52:22 | [INFO]    | Shard 0 : Received HELLO (gateway-prd-main-thb6)
+2018-10-20 12:52:22 | [INFO]    | Shard 0 : Received READY (gateway-prd-main-thb6, discord-sessions-prd-1-12)
+2018-10-20 13:12:53 | [INFO]    | Discordia 2.6.0
+2018-10-20 13:12:53 | [INFO]    | Connecting to Discord...
+2018-10-20 13:12:54 | [INFO]    | Authenticated as 5e Bot#2375
+2018-10-20 13:12:54 | [INFO]    | Launching shard 0 (1 out of 1)...
+2018-10-20 13:12:54 | [INFO]    | Shard 0 : Connected to wss://gateway.discord.gg
+2018-10-20 13:12:54 | [INFO]    | Shard 0 : Received HELLO (gateway-prd-main-g9mp)
+2018-10-20 13:12:54 | [INFO]    | Shard 0 : Received READY (gateway-prd-main-g9mp, discord-sessions-prd-1-24)
