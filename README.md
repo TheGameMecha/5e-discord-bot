@@ -14,3 +14,4 @@
 ## Commands
 - !xp *show the 5e XP Table*
 - !bot *show bot info*
+- !roll xdy *where x is the number of dice and y is the size of the dice. For example, '!roll 2d6' would roll 2 six sided dice*
