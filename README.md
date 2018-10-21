@@ -12,6 +12,6 @@
 - enter `luvit 5e-bot.lua`
 
 ## Commands
-- !xp *show the 5e XP Table*
-- !roll xdy *where x is the number of dice and y is the size of the dice. For example, '!roll 2d6' would roll 2 six sided dice*
-- !bot *show bot info*
+- `!xp` show the 5e XP Table
+- `!roll xdy` where x is the number of dice and y is the size of the dice. For example, '!roll 2d6' would roll 2 six sided dice
+- `!bot` show bot info
