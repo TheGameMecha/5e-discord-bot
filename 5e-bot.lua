@@ -10,6 +10,13 @@ local botName = "5e Bot"
 
 --Data Variables
 local xpTable = ""
+local helpTable = ""
+
+--Rolling Dice variables
+local dicePattern = string.upper("!roll ") .."%d+" .. string.upper("d") .. "%d+"
+--These values refer to number of DIGITS, not values
+local maxDiceNum = 2 --number of dice to roll
+local maxDiceSize = 3 --size of dice (d20 for example)
 
 
 --Reads data from a file and returns it
@@ -49,26 +56,39 @@ client:on('ready', function()
 	print('Logged in as '.. client.user.username)
 	-- Load all strings
 	xpTable = readAll("Tables/xpTable.tbl")
+	helpTable = readAll("Tables/help.tbl")
 end)
 
 --Creates a callback for when a user sends a message
 client:on('messageCreate', function(message)
 	if string.find(message.content, "!") == 1 then
-		if message.content == '!xp' then
+		if string.upper(message.content) == string.upper('!xp') then
 			message.channel:send(xpTable)
-		elseif message.content == '!bot' then
+		elseif string.upper(message.content) == string.upper('!bot') then
 			message.channel:send("This bot " .. bot_version .. " was created by " .. botCreator .. ".")
-		elseif string.find(message.content, "!roll %dd%d") then
+		elseif string.find(string.upper(message.content), dicePattern) then
 			splitVar = split(message.content, '%s')
 			diceVar = split(splitVar[2], 'd')
 			
-			rollingMessage = 'Rolling ' .. diceVar[1] .. 'd' .. diceVar[2]
-			print (rollingMessage)
-			message.channel:send(rollingMessage)
+			if string.len(diceVar[1]) > maxDiceNum then
+				print ("Number of dice is too large")
+				message.channel:send("Number of dice is too large")
+				return 
+			elseif string.len(diceVar[2]) > maxDiceSize then
+				print ("Size of dice is too large")
+				message.channel:send("Size of dice is too large")
+				return
+			end
 			
 			
 			numDice = tonumber(diceVar[1])
 			diceSize = tonumber(diceVar[2])
+
+
+			
+			rollingMessage = 'Rolling ' .. diceVar[1] .. 'd' .. diceVar[2]
+			print (rollingMessage)
+			message.channel:send(rollingMessage)
 			
 			outputText = ""
 			sum = 0
@@ -81,6 +101,8 @@ client:on('messageCreate', function(message)
 			outputText = outputText .. "Total: " .. sum .. "\n"
 			print(outputText)
 			message.channel:send(outputText)
+		elseif string.find(string.upper(message.content), string.upper("!help")) then
+			message.channel:send(helpTable)
 		else 
 			message.channel:send("Invalid Command.")
 		end

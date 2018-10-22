@@ -44,3 +44,5 @@ luac.out
 *.log
 *.json
 *.tkn
+*.pem
+*.ppk
