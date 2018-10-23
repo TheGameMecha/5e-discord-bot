@@ -2,8 +2,12 @@
 local discordia = require('discordia')
 local client = discordia.Client()
 
+--Includes
+--JSON
+json = require "json"
+
 --Bot Variables
-local bot_version = "VERSION 0.1"
+local bot_version = "Version 0.1"
 local token = '' --loaded from token.tkn
 local botCreator = "TheGameMechanic#9693"
 local botName = "5e Bot"
@@ -47,6 +51,13 @@ function split(inputstr, sep)
         return t
 end
 
+function tableLength(T)
+	local count = 0
+	for _ in pairs(T) do count = count + 1 end
+	return count
+end
+
+
 --This is where we read the token
 token = readAll('token.tkn')
 
@@ -57,6 +68,9 @@ client:on('ready', function()
 	-- Load all strings
 	xpTable = readAll("Tables/xpTable.tbl")
 	helpTable = readAll("Tables/help.tbl")
+	
+	srdJson = readAll("Tables/5esrd.json")
+	decodedSrd = json.decode(srdJson)
 end)
 
 --Creates a callback for when a user sends a message
@@ -65,7 +79,7 @@ client:on('messageCreate', function(message)
 		if string.upper(message.content) == string.upper('!xp') then
 			message.channel:send(xpTable)
 		elseif string.upper(message.content) == string.upper('!bot') then
-			message.channel:send("This bot " .. bot_version .. " was created by " .. botCreator .. ".")
+			message.channel:send("I am " .. bot_version .. "; My creator is " .. botCreator .. ".")
 		elseif string.find(string.upper(message.content), dicePattern) then
 			splitVar = split(message.content, '%s')
 			diceVar = split(splitVar[2], 'd')
@@ -79,13 +93,10 @@ client:on('messageCreate', function(message)
 				message.channel:send("Size of dice is too large")
 				return
 			end
-			
-			
+
 			numDice = tonumber(diceVar[1])
 			diceSize = tonumber(diceVar[2])
 
-
-			
 			rollingMessage = 'Rolling ' .. diceVar[1] .. 'd' .. diceVar[2]
 			print (rollingMessage)
 			message.channel:send(rollingMessage)
@@ -100,7 +111,10 @@ client:on('messageCreate', function(message)
 			end
 			outputText = outputText .. "Total: " .. sum .. "\n"
 			print(outputText)
-			message.channel:send(outputText)
+			message.channel:send(outputText)	
+		elseif string.find(string.upper(message.content), string.upper("!srd")) then
+			text = split(message.content, "%s")
+		
 		elseif string.find(string.upper(message.content), string.upper("!help")) then
 			message.channel:send(helpTable)
 		else 

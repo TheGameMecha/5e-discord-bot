@@ -42,7 +42,7 @@ luac.out
 # Other
 *.bat
 *.log
-*.json
+gateway.json
 *.tkn
 *.pem
 *.ppk
