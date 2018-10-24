@@ -9,9 +9,11 @@
 - Create a plain text file called token.tkn
 - Put your token from the Discord App in there, and save
 - Open cmd.exe
-- enter `luvit 5e-bot.lua`
+- run `luvit 5e-bot.lua`
 
 ## Commands
-- `!xp` show the 5e XP Table
-- `!roll xdy` where x is the number of dice and y is the size of the dice. For example, '!roll 2d6' would roll 2 six sided dice
-- `!bot` show bot info
+- `&xp` - displays the XP Table
+- `&roll #d#` - replace # with a number. Rolls a number of dice of any given size.
+- `&rollstats` - roll 4d6, 6 times. Drops the lowest die roll per 4d6
+- `&bot` - bot version info
+- `&help` - display this message

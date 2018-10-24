@@ -23,15 +23,14 @@ local bot_version = "Version 0.1"
 local token = '' --loaded from token.tkn
 local botCreator = "TheGameMechanic#9693"
 local botName = "5e Bot"
-local commandDelim = "!"
-
+local commandDelim = "&" --the operator to call a command
 
 --Data Variables
 local xpTable = ""
 local helpTable = ""
 
 --Rolling Dice variables
-local dicePattern = string.upper("!roll ") .."%d+" .. string.upper("d") .. "%d+"
+local dicePattern = string.upper("roll ") .."%d+" .. string.upper("d") .. "%d+"
 --These values refer to number of DIGITS, not values
 local maxDiceNum = 2 --number of dice to roll
 local maxDiceSize = 3 --size of dice (d20 for example)
@@ -65,9 +64,9 @@ function split(inputstr, sep)
         return t
 end
 
-function removeDelim(inputstr)
-	returnVal = split(inputstr, commandDelim)
-	return returnVal[2]
+function removeDelim(inputstring)
+	returnVal = split(inputstring, commandDelim)
+	return returnVal[1]
 end
 
 function tableLength(T)
@@ -104,12 +103,14 @@ end)
 
 --Creates a callback for when a user sends a message
 client:on('messageCreate', function(message)
-	if string.find(message.content, "!") == 1 then
-		if string.upper(message.content) == string.upper('!xp') then
+	if string.find(message.content, commandDelim) == 1 then
+		inputMessage = ""
+		inputMessage = removeDelim(message.content)
+		if string.upper(inputMessage) == string.upper('xp') then
 			message.channel:send(xpTable)
-		elseif string.upper(message.content) == string.upper('!bot') then
+		elseif string.upper(inputMessage) == string.upper('bot') then
 			message.channel:send("I am " .. bot_version .. "; My creator is " .. botCreator .. ".")
-		elseif string.find(string.upper(message.content), dicePattern) then
+		elseif string.find(string.upper(inputMessage), dicePattern) then
 			splitVar = split(message.content, '%s')
 			diceVar = split(splitVar[2], 'd')
 			
@@ -141,9 +142,9 @@ client:on('messageCreate', function(message)
 			outputText = outputText .. "Total: " .. sum .. "\n"
 			print(outputText)
 			message.channel:send(outputText)	
-		elseif string.find(string.upper(message.content), string.upper("!srd")) then
-			text = split(message.content, "%s")
-		elseif string.upper(message.content) == string.upper("!rollstats") then
+		elseif string.find(string.upper(inputMessage), string.upper("srd")) then
+			text = split(inputMessage, "%s")
+		elseif string.upper(inputMessage) == string.upper("rollstats") then
 			diceArray = {}
 			finalOutput = ""
 			for i = 1, 6 do
@@ -178,7 +179,7 @@ client:on('messageCreate', function(message)
 			end
 			
 			message.channel:send(finalOutput)
-		elseif string.find(string.upper(message.content), string.upper("!help")) then
+		elseif string.find(string.upper(inputMessage), string.upper("help")) then
 			message.channel:send(helpTable)
 		else 
 			message.channel:send("Invalid Command.")
