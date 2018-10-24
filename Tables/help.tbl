@@ -1,5 +1,5 @@
-`!xp` - displays the XP Table
-`!roll #d#` - replace # with a number. Rolls a number of dice of any given size.
-`!rollstats` - roll 4d6, 6 times. Drops the lowest die roll per 4d6
-`!bot` - bot version info
-`!help` - display this message
+- `&xp` - displays the XP Table
+- `&roll #d#` - replace # with a number. Rolls a number of dice of any given size.
+- `&rollstats` - roll 4d6, 6 times. Drops the lowest die roll per 4d6
+- `&bot` - bot version info
+- `&help` - display this message
