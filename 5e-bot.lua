@@ -29,13 +29,15 @@ local commandDelim = "&" --the operator to call a command
 local xpTable = ""
 local helpTable = ""
 
+--Data Tables
+ local raceTable = {"HUMAN", "DWARF", "ELF", "HALFLING", "HALFELF", "DRAGONBORN", "GNOME", "HALFORC", "TIEFLING" }
+
 --Rolling Dice variables
 local dicePattern = string.upper("roll ") .."%d+" .. string.upper("d") .. "%d+"
 --These values refer to number of DIGITS, not values
 local maxDiceNum = 2 --number of dice to roll
 local maxDiceSize = 3 --size of dice (d20 for example)
 
-math.randomseed(os.time())
 --Reads data from a file and returns it
 function readAll(file)
     local f = assert(io.open(file, "rb"))
@@ -64,18 +66,20 @@ function split(inputstr, sep)
         return t
 end
 
+--Remove the delimitor from the string, and return the new string
 function removeDelim(inputstring)
 	returnVal = split(inputstring, commandDelim)
 	return returnVal[1]
 end
 
+--Get the length of a table
 function tableLength(T)
 	local count = 0
 	for _ in pairs(T) do count = count + 1 end
 	return count
 end
 
-
+--Get the lowest value in an array
 function getLowest(input)
 	lowest = input[1]
 	for i = 1, #input do
@@ -84,6 +88,17 @@ function getLowest(input)
 		end
 	end
 	return lowest
+end
+
+--Table contains function
+local function has_value (tab, val)
+    for index, value in ipairs(tab) do
+        if string.upper(value) == string.upper(val) then
+            return true
+        end
+    end
+
+    return false
 end
 
 --This is where we read the token
@@ -97,8 +112,9 @@ client:on('ready', function()
 	xpTable = readAll("Tables/xpTable.tbl")
 	helpTable = readAll("Tables/help.tbl")
 	
-	srdJson = readAll("Tables/5esrd.json")
+	srdJson = readAll("json/5esrd.json")
 	decodedSrd = json.decode(srdJson)
+
 end)
 
 --Creates a callback for when a user sends a message
@@ -143,7 +159,15 @@ client:on('messageCreate', function(message)
 			print(outputText)
 			message.channel:send(outputText)	
 		elseif string.find(string.upper(inputMessage), string.upper("srd")) then
-			text = split(inputMessage, "%s")
+      text = split(inputMessage, "%s")
+      
+     if has_value(raceTable, string.upper(text[2])) then
+              data = ""
+              data = readAll("Tables/races/" .. string.lower(text[2]) .. ".tbl")
+              print (data)
+              message.channel:send(data)
+    end
+
 		elseif string.upper(inputMessage) == string.upper("rollstats") then
 			diceArray = {}
 			finalOutput = ""
