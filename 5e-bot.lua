@@ -101,6 +101,10 @@ local function has_value (tab, val)
     return false
 end
 
+local function trimString (oldString, amount)
+	return oldString:sub(amount)
+end
+
 --This is where we read the token
 token = readAll('token.tkn')
 
@@ -159,14 +163,21 @@ client:on('messageCreate', function(message)
 			print(outputText)
 			message.channel:send(outputText)	
 		elseif string.find(string.upper(inputMessage), string.upper("srd")) then
-      text = split(inputMessage, "%s")
-      
-     if has_value(raceTable, string.upper(text[2])) then
-              data = ""
-              data = readAll("Tables/races/" .. string.lower(text[2]) .. ".tbl")
-              print (data)
-              message.channel:send(data)
-    end
+		text = split(inputMessage, "%s")
+		
+		if text[2] == nil then
+			return
+		end
+		if has_value(raceTable, string.upper(text[2])) then
+				 data = ""
+				 data = readAll("Tables/races/" .. string.lower(text[2]) .. ".tbl")
+				  
+
+				 print (data)
+				 message.channel:send(data)
+		else
+			message.channel:send("No such entry in the SRD")
+		end
 
 		elseif string.upper(inputMessage) == string.upper("rollstats") then
 			diceArray = {}
